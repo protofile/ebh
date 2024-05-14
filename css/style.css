@@ -1,0 +1,24 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-nav li a{
+    font-weight: 400;
+}
+.hero .container    {
+    height: 50vh;
+}
+.hero h1{
+   font-weight: 700;
+   font-size: 48px; 
+}
+.hero h1 span{
+   color: #73C348;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero p{
+    font-size: 16px;
+}
