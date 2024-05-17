@@ -14,9 +14,25 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
 }
 
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+}
 p{
     width: 100%;
     float: left;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 section{
@@ -74,24 +90,26 @@ figure img{
     color: #026B33;
 }
 
-/* cek */
 
-h3{
-    font-size: 18px;
-    font-weight: 700;
+.navbar{
+    margin-left: 80px;
+    margin-right: 80px;
 }
-h2{
-    font-size: 48px;
-    font-weight: 700;
+.navbar .container-fluid{
+    padding: 0;
+    margin-bottom: 7px;
+}
+.navbar-collapse{
+    padding-left: 80px;
 }
 .navbar-nav li a{
     font-weight: 400;
+    color: #000000;
 }
 .hero .container    {
     padding-top: 225px;
     height: 598px;
     background-image: url(../images/bank/banner1.png);
-    background-size: 100%;
     background-repeat: no-repeat;
 }
 .hero .row{
@@ -126,6 +144,7 @@ h2{
 .hero a{
     color: #fff;
     text-decoration: none;
+    margin-left: 20px;
 }
 .hero a:hover{
     color: #73C348;
@@ -139,6 +158,15 @@ h2{
 }
 .hero p{
     font-size: 16px;
+}
+.hero-caption .card-1{
+    border-right: 1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hero-caption .card-2{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .hero-caption .desc-sec{
     background-color: #212121;
@@ -157,22 +185,23 @@ h2{
 }
 .hero-caption .desc-sec .col-6 p{
     color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Lato", sans-serif;
 }
 .hero-caption .desc-sec .col-6 a{
     color: #73C348;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
 }
 .hero-caption .desc-sec .col-6 img{
     padding-right: 40px;
 }
 .product-home{
+    background-color: #f1f9ed;
+    margin-left: 95px;
+    margin-right: 95px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.product-home::before{
+    position: relative;
+    
 }
 .product-home h1{
    font-weight: 700;
@@ -207,34 +236,34 @@ h2{
 }
 .product-home .element-detail .col-12{
     border-bottom: 1px solid #fff;
-    
 }
-.product-home .col-7 img{
+.product-home .element-detail .col-12 p{
+    padding: 0;
+    margin: 5px;
+}
+.product-home .col-8 img{
     position: absolute;
-    width: 43%;
+    margin-top: -10px;
+    width: 200%;
     z-index: 0;
 }
 .ebh-care{
+    padding-top: 100px;
     margin-top: 40px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 100px;
 }
 .ebh-care h3{
-    font-size: 24px;
-    font-weight: 700;
+    margin-left: 80px;
+    margin-right: 80px;
     color: #73C348;
 }
 .ebh-care h2{
-    font-size: 36px;
-    font-weight: 700;
     color: #1A4900;
     text-align: start;
 }
 .ebh-care p{
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     color: #2a7004cc;
 }
 .ebh-care button{
@@ -251,7 +280,10 @@ h2{
     font-weight: 700;
 }
 .ebh-care .col-12{
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 68px;
+    padding-right: 100px;
 }
 .ebh-care .col-2{
     margin-left: 40px;
@@ -262,27 +294,50 @@ h2{
 .ebh-care .col-4{
     width: 32%;
 }
-.ebh-care .card-1{
-    padding: 37px;
+.ebh-care .card-1, .card-2, .card-3{
+    padding: 0;
     height: 100%;
-    background-image: url(../images/bank/banner4.png);
 }
-.ebh-care .card-2{
-    padding: 80px;
+
+.ebh-care .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.ebh-care .card .img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.ebh-care .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background-image: url(../images/bank/banner3.png);
+    background-color: rgba(0, 128, 0, 0.5); /* Warna hijau transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-.ebh-care .card-2 h2{
-    text-align: center;
-    color: #fff;
+
+.ebh-care .card:hover .img-fluid {
+    transform: scale(1.1);
+}
+
+.ebh-care .card:hover .overlay {
+    opacity: 1;
+}
+
+.ebh-care .overlay-text {
+    color: white;
     font-size: 24px;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-}
-.ebh-care .card-3{
-    padding: 37px;
-    height: 100%;
-    background-image: url(../images/bank/banner2.png);
+    font-weight: bold;
+    text-align: center;
 }
 
 .footer-section{
@@ -306,6 +361,7 @@ h2{
     font-family: "Lato", sans-serif;
     color: #000000;
     margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 .footer-section h4{
     font-size: 16px;
@@ -317,4 +373,26 @@ h2{
     font-weight: 400;
     font-family: "Lato", sans-serif;
     margin-bottom: 0;
+}
+.footer-copyright{
+    padding: 10px;
+    background-color: #0D2500;
+}
+.footer-copyright p{
+    padding-top: 10px;
+    color: #fff;
+}
+.footer-copyright .col-4 p{
+    color: #fff;
+    text-align: end;
+    padding-top: 10px;
+}
+.footer-copyright a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    color: #E3E520;
 }
