@@ -712,7 +712,7 @@ figure img{
     padding-right: 150px;
     text-align: justify;
  }
- .environtment .section-title h3{
+.environtment .section-title h3{
     text-align: center;
  }
 .env-group .section-title p{
@@ -727,4 +727,59 @@ figure img{
 .card-lingkungan .section-title p{
     text-align: center;
     padding-top: 10px ;
+}
+.ebhpeduli .section-title h3{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+ }
+ .ebhpeduli .section-title p{
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+ }
+ .galeri .section-title h3{
+    text-align: center;
+ }
+.card-galeri{
+    padding-top: 10px;
+}
+.card-galeri img{
+    width: 100%;
+}
+.card-galeri .section-title p{
+    text-align: center;
+    padding-top: 10px ;
+}
+.galeri-careDetail{
+    padding-top: 0;
+}
+ .galeri-careDetail .section-title h3{
+    text-align:start;
+ }
+.galeri-careDetail .card-galeri{
+    padding-top: 10px;
+}
+.galeri-careDetail .card-galeri img{
+    width: 100%;
+}
+.galeri-careDetail .card-galeri .section-title p{
+    text-align: center;
+    padding-top: 10px ;
+}
+.care-detail .care-group .section-title p{
+    text-align: justify;
+}
+.contact .form-contact input{
+    margin-top: 20px;
+}
+.contact .form-contact button{
+    margin-top: 20px;
+    background-color: var(--green);
+    color: #fff;
+}
+.contact .company-info .section-title{
+    background-color: var(--green);
+    padding: 40px;
+    border-radius: 20px;
 }
