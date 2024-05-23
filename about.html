@@ -23,48 +23,42 @@
 <body>
     <div class="mainsetup">
         <!-- NAVBAR START -->
-        <nav class="navbar navbar-expand-lg bg-light-tertiary">
+        <nav>
             <div class="container wide">
-                <a class="navbar-brand" href="#">
-                    <img src="asset/images/bank/logo.png" />
-                </a>
-                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2">
-                            <a class="nav-link active" aria-current="page" href="#">Energi Untuk Sinergi</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Operasional</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Pemasaran</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">EBH Peduli</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Karir</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <a class="navbar-brand" href="#">
-                        <img src="asset/images/bank/icons3.png" alt="Logo" class="img-fluid" />
-                    </a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#"> ID</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"> /</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> EN</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-2">
+                        <a class="logo" href="#">
+                            <img src="asset/images/bank/logo.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="ebh-menu">
+                            <li class="menu-item">
+                                <a class=" active" aria-current="page" href="#">Energi Untuk Sinergi</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Operasional</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Pemasaran</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">EBH Peduli</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Karir</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Kontak</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="lang-bt">
+                            <a href="#" class="active">EN</a> 
+                            <a href="#">ID</a>   
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -77,10 +71,6 @@
                         <h1 class="text-light">
                             Energi Untuk Sinergi
                         </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
                         <p class="sub-hero-text">
                             Mendukung eksplorasi dan pengembangan produksi pertambangan
                             batubara yang berkualitas
@@ -95,16 +85,19 @@
         <section class="visimisi">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-md-5">
                         <figure class="ratio ratio-1">
                             <img src="asset/images/bank/asset2.png" alt="Logo" class="img-fluid">
                         </figure>
                     </div>
-                    <div class="col-7">
+                    <div class="col-md-1">
+                        <div class="spacer"></div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="section-title">
                             <h3>Visi</h3>
                         </div>
-                        <div class="section-title">
+                        <div class="article">
                             <p>Menjadi perusahaan pertambangan batu bara yang memberikan nilai tambah bagi seluruh
                                 pemegang
                                 kepentingan (stakeholder)
@@ -113,12 +106,14 @@
                         <div class="section-title">
                             <h3>Misi</h3>
                         </div>
-                        <ul>
-                            <li>Menjalankan proses kerja sesuai dengan prinsip-prinsip pertambangan dan tata kelola
-                                perusahaan yang baik.</li>
-                            <li>Mengoptimalkan hasil produksi sesuai standar yang diharapkan.  </li>
-                            <li>Menciptakan manfaat jangka panjang dengan mitra usaha. </li>
-                        </ul>
+                        <div class="article">
+                            <ul>
+                                <li>Menjalankan proses kerja sesuai dengan prinsip-prinsip pertambangan dan tata kelola
+                                    perusahaan yang baik.</li>
+                                <li>Mengoptimalkan hasil produksi sesuai standar yang diharapkan.  </li>
+                                <li>Menciptakan manfaat jangka panjang dengan mitra usaha. </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,47 +124,56 @@
         <section class="corevalue">
             <div class="container">
                 <div class="row">
-                    <div class="section-title">
-                        <h3>Nilai Inti Kami</h3>
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3>Nilai Inti Kami</h3>
+                        </div>
                     </div>
-                    <div class="card-value">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-2">
-                                <div class="section-text-card card-3">
-                                    <h1>D</h1> 
-                                    <h4>Diversity</h4>
-                                    <p>Bersatu dalam keberagaman</p>     
-                                </div>
+                </div>
+                <div class="row">
+                    <div class="col-one-fifth">
+                        <div class="section-text-card card-2">
+                            <h1>D</h1> 
+                            <div class="bottom-text">
+                                <h4>Diversity</h4>
+                                <p>Bersatu dalam keberagaman</p> 
                             </div>
-                            <div class="col-md-2">
-                                <div class="section-text-card card-2">
-                                    <h1>O</h1> 
-                                    <h4>One Family</h4>
-                                    <p>Bangga dalam satu keluarga</p>     
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="section-text-card card-3">
-                                    <h1>E</h1> 
-                                    <h4>Strive for Excellence</h4>
-                                    <p>Mencapai hasil kerja yang terbaik</p>     
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="section-text-card card-2">
-                                    <h1>I</h1> 
-                                    <h4>Integrity</h4>
-                                    <p>Menjunjung tinggi integritas</p>     
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="section-text-card card-3">
-                                    <h1>T</h1> 
-                                    <h4>Team Work</h4>
-                                    <p>Membangun kerjasama yang produktif</p>     
-                                </div>
-                            </div>
-                            
+                        </div>
+                    </div>
+                    <div class="col-one-fifth">
+                        <div class="section-text-card card-2">
+                            <h1>O</h1> 
+                            <div class="bottom-text">
+                                <h4>One Family</h4>
+                                <p>Bangga dalam satu keluarga</p>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="col-one-fifth">
+                        <div class="section-text-card card-2">
+                            <h1>E</h1>
+                            <div class="bottom-text"> 
+                                <h4>Strive for Excellence</h4>
+                                <p>Mencapai hasil kerja yang terbaik</p>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="col-one-fifth">
+                        <div class="section-text-card card-2">
+                            <h1>I</h1>
+                            <div class="bottom-text"> 
+                                <h4>Integrity</h4>
+                                <p>Menjunjung tinggi integritas</p>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="col-one-fifth">
+                        <div class="section-text-card card-2">
+                            <h1>T</h1>
+                            <div class="bottom-text"> 
+                                <h4>Team Work</h4>
+                                <p>Membangun kerjasama yang produktif</p>    
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -180,32 +184,34 @@
 
     <!-- FOOTER START-->
     <div class="footer-section">
-        <div class="row d-flex justify-content-between">
-            <div class="col-6 footer-sec1">
-                <img src="asset/images/bank/logo.png" alt="Logo" class="img-fluid" />
-                <p>PT. Energi Batu Hitam. Graha Family Mart, Lantai 2, Jalan Setiabudi Selatan Kav.10, Karet, Setiabudi,
-                    Jakarta Selatan,
-                    Jakarta , ID</p>
-            </div>
-            <div class="col-2 footer-sec2">
-                <div class="foot-title">
-                    <h4>Sitemap</h4>
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-7 footer-sec1">
+                    <img src="asset/images/bank/logo.png" alt="Logo" class="img-fluid" />
+                    <p>PT. Energi Batu Hitam. Graha Family Mart, Lantai 2, Jalan Setiabudi Selatan Kav.10, Karet, Setiabudi,
+                        Jakarta Selatan,
+                        Jakarta , ID</p>
                 </div>
-                <div class="sitemap">
-                    <a href="#">Energi Untuk Sinergi</a>
-                    <a href="#">Operational</a>
-                    <a href="#">Marketing</a>
-                    <a href="#">EBH Peduli</a>
-                    <a href="#">Career</a>
-                    <a href="#">Contact</a>
+                <div class="col-md-2 footer-sec2">
+                    <div class="foot-title">
+                        <h4>Sitemap</h4>
+                    </div>
+                    <div class="sitemap">
+                        <a href="#">Energi Untuk Sinergi</a>
+                        <a href="#">Operational</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">EBH Peduli</a>
+                        <a href="#">Career</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-3 footer-sec3">
-                <div class="foot-title">
-                    <h4>Kontak Kami</h4>
+                <div class="col-md-3 footer-sec3">
+                    <div class="foot-title">
+                        <h4>Kontak Kami</h4>
+                    </div>
+                    <p><i class="fa-solid fa-phone"></i> (021) 57941797</p>
+                    <p><i class="fa-solid fa-envelope"></i> admin@energibatuhitam.com</p>
                 </div>
-                <p><i class="fa-solid fa-phone"></i> (021) 57941797</p>
-                <p><i class="fa-solid fa-envelope"></i> admin@energibatuhitam.com</p>
             </div>
         </div>
     </div>
