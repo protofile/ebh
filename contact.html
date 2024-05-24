@@ -23,40 +23,49 @@
 <body>
     <div class="mainsetup">
         <!-- NAVBAR START -->
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container wide">
-                <div class="row">
-                    <div class="col-md-2">
-                        <a class="logo" href="#">
-                            <img src="asset/images/bank/logo.png" />
+                <div class="row w-100">
+                    <div class="col-md-2 col-10 order-md-first">
+                        <a class="navbar-brand logo" href="#">
+                            <img src="asset/images/bank/logo.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="col-md-9">
-                        <ul class="ebh-menu">
-                            <li class="menu-item">
-                                <a class=" active" aria-current="page" href="#">Energi Untuk Sinergi</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Operasional</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Pemasaran</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">EBH Peduli</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Karir</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Kontak</a>
-                            </li>
-                        </ul>
+                    <div class="col-md-2 col-2 order-md-last">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
+                    <div class="col-md-8 ml-auto">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mr-auto ebh-menu">
+                                <li class="nav-item menu-item">
+                                    <a class="nav-link" aria-current="page" href="#">Energi Untuk Sinergi</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class=" active" aria-current="page" href="#">Operasional</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class="nav-link" href="#">Pemasaran</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class="nav-link" href="#">EBH Peduli</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class="nav-link" href="#">Karir</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class="nav-link" href="#">Kontak</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="col-md-1">
-                        <div class="lang-bt">
-                            <a href="#" class="active">EN</a> 
-                            <a href="#">ID</a>   
+                        <div class="lang-bt navbar-text">
+                            <a href="#" class="active">EN</a>
+                            <a href="#">ID</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +125,8 @@
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-7 footer-sec1">
                         <img src="asset/images/bank/logo.png" alt="Logo" class="img-fluid" />
-                        <p>PT. Energi Batu Hitam. Graha Family Mart, Lantai 2, Jalan Setiabudi Selatan Kav.10, Karet, Setiabudi,
+                        <p>PT. Energi Batu Hitam. Graha Family Mart, Lantai 2, Jalan Setiabudi Selatan Kav.10, Karet,
+                            Setiabudi,
                             Jakarta Selatan,
                             Jakarta , ID</p>
                     </div>
@@ -146,13 +156,13 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row d-flex justify-content-between bg-grey">
-                    <div class="col-9">
+                    <div class="col-md-7">
                         <p>Copyright@2019 - Energi Batu Hitam. All rights reserved</p>
                     </div>
-                    <div class="col-2 d-flex align-items-end">
+                    <div class="col-md-3">
                         <p>Follow our social media :</p>
                     </div>
-                    <div class="col-1 d-flex align-items-center">
+                    <div class="col-md-2 d-flex align-items-center">
                         <!-- <p>Follow our social media :</p> -->
                         <a href="https://www.instagram.com" class="ml-2" target="_blank">
                             <i class="fab fa-instagram"></i>

@@ -1202,8 +1202,29 @@ nav{
 }
 .galeri-careDetail .row .col-md-4{
     padding-left: 40px;
-    
 }
-
+.peduli{
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+.peduli .row .article p{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact{
+    padding-top: 10px;
+}
+.contact .row .col-md-5{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.contact .row .col-md-5 h3{
+    text-align: center;
+}
+.contact .row .col-md-5 .form-contact button{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
 
 }
