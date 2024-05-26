@@ -25,7 +25,7 @@
 */
 
 :root{
-    --green: #73C348;
+    --ebhgreen: #73C348;
     --lightgreen: #F1F9ED;
     --darkgreen: #57A52D;
     --darkestgreen: #1A4900;
@@ -501,7 +501,7 @@ section.hero-caption{
 .section-title h2{
    font-weight: 700;
    font-size: 48px; 
-   color: var(--green);
+   color: var(--ebhgreen);
 }
 .section-title h3{
     font-weight: 700;
@@ -511,7 +511,7 @@ section.hero-caption{
  .section-title h4{
     font-weight: 700;
     font-size: 24px; 
-    color: var(--green);
+    color: var(--ebhgreen);
  }
  .section-title p{
     font-size: 16px;
@@ -657,7 +657,7 @@ section.hero-caption{
     padding: 20px;
     height: 400px;
     position: relative;
-    background: var(--green);
+    background: var(--ebhgreen);
 }
 .corevalue .row .col-one-fifth:first-child .section-text-card{
     border-radius: 12px 0 0 12px;
@@ -875,13 +875,13 @@ section.hero-caption{
     height: 56px;
     border: none;
     background: var(--lightgreen);
-    border-bottom: 1px solid var(--green);
+    border-bottom: 1px solid var(--ebhgreen);
     border-radius: 0;
     font-size: 14px;
 }
 .contact .form-contact button{
     margin-top: 20px;
-    background-color: var(--green);
+    background-color: var(--ebhgreen);
     color: #fff;
 }
 .contact .company-info{
@@ -977,7 +977,7 @@ nav{
     -webkit-transition: all ease-out 0.3s;
 }
 .ebh-menu li a.active{
-    color: var(--green);
+    color: var(--ebhgreen);
 }
 .ebh-menu li a.active::before{
     opacity: 1;
@@ -1007,7 +1007,7 @@ nav{
     right: -5px;
 }
 .lang-bt a.active{
-    color: var(--green);
+    color: var(--ebhgreen);
 }
 
 .col-one-fifth{
