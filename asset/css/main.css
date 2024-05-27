@@ -25,7 +25,7 @@
 */
 
 :root{
-    --green: #73C348;
+    --ebhgreen: #73C348;
     --lightgreen: #F1F9ED;
     --darkgreen: #57A52D;
     --darkestgreen: #1A4900;
@@ -128,11 +128,12 @@ figure img{
 
 .btn{
     min-width: 120px;
-    padding: 15px 30px;
+    padding: 15px 40px 15px 30px;
     font-size: 14px;
+    height: 50px;
 }
 .btn-primary{
-    background: #026B33;
+    background: url(../images/bank/button-bg.png) no-repeat right center;
     color: #fff;
     border: none;
 }
@@ -298,7 +299,7 @@ section.hero-caption{
     margin-top: 30px;
     font-weight: 700;
 }
-.product-home h3,h2{
+.product-home h3,.product-home h2{
     color: #fff;
     text-align: center;
 }
@@ -518,7 +519,7 @@ section.hero-caption{
 .section-title h2{
    font-weight: 700;
    font-size: 48px; 
-   color: var(--green);
+   color: var(--ebhgreen);
 }
 .section-title h3{
     font-weight: 700;
@@ -528,7 +529,7 @@ section.hero-caption{
  .section-title h4{
     font-weight: 700;
     font-size: 24px; 
-    color: var(--green);
+    color: var(--ebhgreen);
  }
  .section-title p{
     font-size: 16px;
@@ -627,7 +628,7 @@ section.hero-caption{
    font-size: 48px; 
 }
  .hero-career h1{
-   color: var(--green);
+   color: var(--ebhgreen);
 }
  .hero-career .sub-hero-text{ 
     padding-top: 20px;
@@ -696,7 +697,7 @@ section.hero-caption{
     padding: 20px;
     height: 400px;
     position: relative;
-    background: var(--green);
+    background: var(--ebhgreen);
 }
 .corevalue .row .col-one-fifth:first-child .section-text-card{
     border-radius: 12px 0 0 12px;
@@ -914,13 +915,13 @@ section.hero-caption{
     height: 56px;
     border: none;
     background: var(--lightgreen);
-    border-bottom: 1px solid var(--green);
+    border-bottom: 1px solid var(--ebhgreen);
     border-radius: 0;
     font-size: 14px;
 }
 .contact .form-contact button{
     margin-top: 20px;
-    background-color: var(--green);
+    background-color: var(--ebhgreen);
     color: #fff;
 }
 .contact .company-info{
@@ -1016,7 +1017,7 @@ nav{
     -webkit-transition: all ease-out 0.3s;
 }
 .ebh-menu li a.active{
-    color: var(--green);
+    color: var(--ebhgreen);
 }
 .ebh-menu li a.active::before{
     opacity: 1;
@@ -1046,7 +1047,7 @@ nav{
     right: -5px;
 }
 .lang-bt a.active{
-    color: var(--green);
+    color: var(--ebhgreen);
 }
 
 .col-one-fifth{
@@ -1168,162 +1169,410 @@ nav{
     text-align: right;
 }
 
-@media only screen and (max-width: 600px) {
-.hero .container{
+/*PAGE PENJUALAN*/
+.hero-penjualan{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.card-hero-penjualan{
+    width: 100%;
+    float: left;
+    height: 400px;
+    background: #212121;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    position: relative;
+}
+.slider-penjualan .item{
     padding-top: 60px;
 }
-.hero .container .row{
-    padding: 15px;
+.card-hero-penjualan figure{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 400px;
 }
-.hero-caption .desc-sec .col-md-6{
-    padding-left: 60px;
+.card-hero-penjualan figure::before{
+    content: "";
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/bank/shade.png) repeat-x center top;
+    z-index: 2;
 }
-.product-home .section-title h2{
-    font-size: 28px;
+.card-hero-penjualan figure img{
+    object-fit: contain;
+    width: 110%;
+    height: 110%;
+    transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
 }
-.ebh-care .col-sm-12 {
-    display: block;
+.card-hero-penjualan .row{
+    align-items: center;
 }
-.job-vacancy .row .col-sm-12 {
-    display: block;
+.card-hero-penjualan .text h2{
+    font-size: 32px;
+    font-weight: 700;
 }
-.op-k3 .col-sm-12 {
-    display: block;
+.card-hero-penjualan .text h2 a{
+    color: #fff;
 }
-.ebh-care .col-sm-12 p{
-    text-align: justify;
+.card-hero-penjualan .text p{
+    color: rgba(255,255,255,0.8);
 }
-.job-vacancy .row .col-sm-12 p{
-    text-align: justify;
+
+.align-items-center{
+    align-items: center;
 }
-.op-k3 .col-sm-12 p{
-    text-align: justify;
+
+.pointing-text{
+    width: 100%;
+    float: left;
 }
-.ebh-care .col-md-2{
-    margin-left: 0;
+.pointing-text.left{
+    padding-right: 90px;
+    text-align: right;
 }
-.job-vacancy .col-md-2{
-    margin-left: 0;
-}
-.ebh-card-group{
-    padding-top: 30px;
-}
-.ebh-card-group .col-12{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.product-home .row .product {
-    padding-bottom: 100px;
-    height: 750px;
-}
-.product-home img{
-    padding-top: 30px;
-}
-.navbar .col-2 button{
-    margin-top: 20px;
-}
-.navbar-light .navbar-text{
-    margin-left: 15px;
-}
-.hero-about .container {
-    margin-top: 150px;
-}
-.hero-about .row h1{
-    font-size: 36px ;
-}
-.hero-about .container{
-    padding-top: 90px;
-}
-.hero-about .container .row{
-    padding-left: 20px;
-}
-.hero-career .container {
-    margin-top: 150px;
-}
-.hero-career .row h1{
-    font-size: 36px ;
-}
-.hero-career .container{
-    padding-top: 90px;
-}
-.hero-career .container .row{
-    padding-left: 20px;
-}
-.corevalue .card-value{
-    margin-top: 10px;
-    display: block;
-}
-.corevalue .card-value .section-text-card{
-    margin-left: 20px;
-    width: 350px;
-}
-.footer-copyright .row .col-md-3 p{
+.pointing-text.right{
+    padding-left: 90px;
     text-align: left;
 }
-.principle .row .article .desc-principle{
-    padding-top: 30px;
-    text-align: justify;
+.pointing-text li{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 20px;
 }
-.principle .row .article p{
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.operational .row .section-title{
-    text-align: center;
+.pointing-text li:last-child{
     margin-bottom: 0;
 }
-.op-k3 .row .col-sm-12 h3{
-    text-align: center;
-    font-size: 24px;
+.pointing-text li::before{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background: var(--ebhgreen);
+    position: absolute;
+    top: 13px;
+    right: -90px;
 }
-.op-k3 .row button{
-    margin-left: 100px;
+.pointing-text.left li::before{
+    right: -90px;
 }
-.ebh-card-group .col-md-4{
-    padding-left: 20px;
-    padding-right: 20px;
+.pointing-text.right li::before{
+    left: -90px;
 }
-.k3-desc{
-    padding-top: 0;
+.pointing-text li::after{
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: var(--ebhgreen);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 13px;
 }
-.k3-desc .article p{
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+.pointing-text.left li::after{
+    right: -90px;
 }
-.care-detail .article p{
-    text-align: justify;
-    padding-top: 20px;
+.pointing-text.right li::after{
+    left: -90px;
 }
-.galeri-careDetail .row h3{
-    text-align: center;
+.pointing-text li h5{
+    font-size: 16px;
+    color: var(--darkestgreen);
 }
-.galeri-careDetail .row .col-md-4{
-    padding-left: 40px;
+.pointing-text li p{
+    opacity: 0.8;
+    color: var(--darkestgreen);
 }
-.peduli{
-    padding-top: 0;
-    padding-bottom: 20px;
+
+.keunggulan-bermitra::before{
+    content: "";
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    background: var(--lightgreen);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: -1;
 }
-.peduli .row .article p{
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+.benefit-card{
+    width: 100%;
+    float: left;
 }
-.contact{
-    padding-top: 10px;
+.benefit-card-title{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
 }
-.contact .row .col-md-5{
-    padding-left: 30px;
-    padding-right: 30px;
+.benefit-card-title img{
+    width: 60px;
+    float: left;
 }
-.contact .row .col-md-5 h3{
-    text-align: center;
+.benefit-card-title h4{
+    width: calc(100% - 60px);
+    padding: 0 20px;
+    float: left;
+    color: var(--ebhgreen);
+    font-size: 18px;
 }
-.contact .row .col-md-5 .form-contact button{
-    margin-left: 100px;
-    margin-bottom: 50px;
+.benefit-card p{
+    opacity: 0.8;
+    color: var(--darkestgreen);
+    line-height: 200%;
 }
+.keunggulan-bermitra .section-title h4{
+    color: var(--darkestgreen);
+}
+
+.slider-produk .item{
+    padding: 20px 10px;
+    width: 100%;
+    float: left;
+}
+.card-produk{
+    width: 100%;
+    float: left;
+    background: var(--ebhgreen);
+    height: 240px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+}
+.card-produk .pic{
+    width: 50%;
+    height: 280px;
+    float: left;
+    position: relative;
+}
+.card-produk .pic figure{
+    width: 100%;
+    height: 280px;
+    margin-top: -20px;
+}
+.card-produk .pic figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card-produk .text{
+    width: 50%;
+    float: left;
+    padding: 40px 20px;
+}
+.card-produk .text h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-produk .text h3 a{
+    color: #fff;
+}
+.card-produk .text table{
+    width: 100%;
+    float: left;
+}
+.card-produk .text table td{
+    padding: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.card-produk .text table td:last-child{
+    text-align: right;
+}
+.card-produk .text table tr:last-child td{
+    border: none;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    overflow: hidden;
+    text-indent: -200px;
+}
+.owl-carousel .owl-prev{
+    left: 10px;
+    background: url(../images/bank/arrow-left.png) no-repeat center;
+}
+.owl-carousel .owl-next{
+    right: 10px;
+    background: url(../images/bank/arrow-right.png) no-repeat center;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero .container{
+        padding-top: 60px;
+    }
+    .hero .container .row{
+        padding: 15px;
+    }
+    .hero-caption .desc-sec .col-md-6{
+        padding-left: 60px;
+    }
+    .product-home .section-title h2{
+        font-size: 28px;
+    }
+    .ebh-care .col-sm-12 {
+        display: block;
+    }
+    .job-vacancy .row .col-sm-12 {
+        display: block;
+    }
+    .op-k3 .col-sm-12 {
+        display: block;
+    }
+    .ebh-care .col-sm-12 p{
+        text-align: justify;
+    }
+    .job-vacancy .row .col-sm-12 p{
+        text-align: justify;
+    }
+    .op-k3 .col-sm-12 p{
+        text-align: justify;
+    }
+    .ebh-care .col-md-2{
+        margin-left: 0;
+    }
+    .job-vacancy .col-md-2{
+        margin-left: 0;
+    }
+    .ebh-card-group{
+        padding-top: 30px;
+    }
+    .ebh-card-group .col-12{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product-home .row .product {
+        padding-bottom: 100px;
+        height: 750px;
+    }
+    .product-home img{
+        padding-top: 30px;
+    }
+    .navbar .col-2 button{
+        margin-top: 20px;
+    }
+    .navbar-light .navbar-text{
+        margin-left: 15px;
+    }
+    .hero-about .container {
+        margin-top: 150px;
+    }
+    .hero-about .row h1{
+        font-size: 36px ;
+    }
+    .hero-about .container{
+        padding-top: 90px;
+    }
+    .hero-about .container .row{
+        padding-left: 20px;
+    }
+    .hero-career .container {
+        margin-top: 150px;
+    }
+    .hero-career .row h1{
+        font-size: 36px ;
+    }
+    .hero-career .container{
+        padding-top: 90px;
+    }
+    .hero-career .container .row{
+        padding-left: 20px;
+    }
+    .corevalue .card-value{
+        margin-top: 10px;
+        display: block;
+    }
+    .corevalue .card-value .section-text-card{
+        margin-left: 20px;
+        width: 350px;
+    }
+    .footer-copyright .row .col-md-3 p{
+        text-align: left;
+    }
+    .principle .row .article .desc-principle{
+        padding-top: 30px;
+        text-align: justify;
+    }
+    .principle .row .article p{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .operational .row .section-title{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .op-k3 .row .col-sm-12 h3{
+        text-align: center;
+        font-size: 24px;
+    }
+    .op-k3 .row button{
+        margin-left: 100px;
+    }
+    .ebh-card-group .col-md-4{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .k3-desc{
+        padding-top: 0;
+    }
+    .k3-desc .article p{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .care-detail .article p{
+        text-align: justify;
+        padding-top: 20px;
+    }
+    .galeri-careDetail .row h3{
+        text-align: center;
+    }
+    .galeri-careDetail .row .col-md-4{
+        padding-left: 40px;
+    }
+    .peduli{
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .peduli .row .article p{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact{
+        padding-top: 10px;
+    }
+    .contact .row .col-md-5{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact .row .col-md-5 h3{
+        text-align: center;
+    }
+    .contact .row .col-md-5 .form-contact button{
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
 
 }
