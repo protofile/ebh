@@ -359,6 +359,26 @@ section.hero-caption{
     transition: 0.7s;
     font-weight: 700;
 }
+.job-vacancy{
+    margin-bottom: 80px;
+}
+.job-vacancy::before{
+    content: "";
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    background: var(--lightgreen);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+}
 .job-vacancy p{
     color: var(--darkgreen);
 }
@@ -764,6 +784,7 @@ section.hero-caption{
     left: 0;
     top: 70%;
     padding: 20px;
+    z-index: 2;
 }
 .section-text-card h4{
     color: #fff;
@@ -772,6 +793,21 @@ section.hero-caption{
 .section-text-card p{
     color: #fff;
     font-size: 14px;
+}
+
+.section-text-card .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: all ease-out 0.3s;
+}
+.section-text-card:hover .img-overlay{
+    opacity: 0.2;
 }
 
 .principle{
@@ -1156,11 +1192,30 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 96px;
+    position: relative;
+    z-index: 2;
 }
 .corevalue .row .section-text-card h4{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
+}
+.testimoni::before{
+    content: "";
+    width: 100%;
+    max-width: 1280px;
+    height: 50%;
+    background: var(--lightgreen);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
 }
 .testimoni .row .testi-card{
     width: 100%;
@@ -1626,7 +1681,19 @@ nav{
 .testimony-slider.owl-carousel .owl-next{
     right: 30px;
 }
+.vacancy-card{
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+}
 
+.r-12{
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    overflow: hidden;
+}
 
 @media only screen and (max-width: 600px) {
     .hero .container{
