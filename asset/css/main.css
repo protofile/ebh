@@ -955,11 +955,6 @@ section.hero-caption{
     border-radius: 0;
     font-size: 14px;
 }
-.contact .form-contact button{
-    margin-top: 20px;
-    background-color: var(--ebhgreen);
-    color: #fff;
-}
 .contact .company-info{
     width: 100%;
     float: left;
