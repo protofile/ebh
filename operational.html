@@ -9,14 +9,10 @@
 
     <link rel="stylesheet" href="asset/css/normalize.css">
     <link rel="stylesheet" href="asset/css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/fontawesome-all.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/owl.carousel.css">
     <link rel="stylesheet" href="asset/css/main.css">
 
@@ -25,7 +21,7 @@
 <body>
     <div class="mainsetup">
         <!-- NAVBAR START -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container wide">
                 <div class="row w-100">
                     <div class="col-md-2 col-10 order-md-first">
@@ -74,8 +70,22 @@
             </div>
         </nav>
         <!-- NAVBAR END -->
+        <section class="p-0 sub-nav-wrapper">
+            <div class="container wide">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sub-nav">
+                            <a data-scroll href="#prinsip">Prinsip Dasar Operasional</a>
+                            <a data-scroll href="#operasional">Operasional</a>
+                            <a data-scroll href="#rantaipasok">Rantai Pasok</a>
+                            <a data-scroll href="#k3">K3 & Lingkungan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- HERO START -->
-        <div class="hero-about">
+        <div class="hero-about pt-20">
             <div class="container wide">
                 <div class="row">
                     <div class="col-12">
@@ -92,7 +102,7 @@
         <!-- HERO END -->
 
         <!-- PRINCIPLE KAMI START -->
-        <section class="principle">
+        <section class="principle" id="prinsip">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -113,79 +123,73 @@
                             <p>Berikut adalah aspek-aspek dasar yang harus diperhatikan dalam perencanaan tambang untuk
                                 menerapkan prinsip GMP:
                             </p>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item article mb-0">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Kompetensi Karyawan Tambang
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, corporis
-                                                enim ex cumque dolore
-                                                optio, molestias officiis libero blanditiis quos labore laboriosam id
-                                                hic
-                                                et, facere quia
-                                                necessitatibus ullam placeat.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item article mb-0">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Pemilihan Alat yang Tepat serta Perawatan yang Terencana
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+
+                            <div class="ebh-accordion">
+                                <div class="ebh-acc-card">
+                                    <div class="ebh-acc-head">Kompetensi Karyawan Tambang <span><i class="fa fa-plus"></i></span></div>
+                                    <div class="ebh-acc-ct">
+                                        <div class="article">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum ipsum eu tellus commodo semper. Quisque lobortis aliquam dolor sed venenatis.</p>
                                             <ul>
-                                                <li>Pemilihan alat operasional harus sesuai dengan fungsi dan kondisi
-                                                    area
-                                                    tambang.</li>
-                                                <li>Selain itu, perawatan alat harus terencana untuk memastikan operasi
-                                                    yang
-                                                    aman dan mengurangi
-                                                    dampak lingkungan.</li>
+                                                <li>ul item 1</li>
+                                                <li>ul item 2</li>
+                                                <li>ul item 3</li>
                                             </ul>
+                                            <ol>
+                                                <li>ol item 1</li>
+                                                <li>ol item 2</li>
+                                                <li>ol item 3</li>
+                                            </ol>
+                                            <table>
+                                                <tr>
+                                                    <th>Table Col 1</th>
+                                                    <th>Table Col 2</th>
+                                                    <th>Table Col 3</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                    <td>Data</td>
+                                                </tr>
+                                            </table>
+                                            <h1>Heading 1</h1>
+                                            <h2>Heading 2</h2>
+                                            <h3>Heading 3</h3>
+                                            <h4>Heading 4</h4>
+                                            <h5>Heading 5</h5>
+                                            <h6>Heading 6</h6>
+                                            <img src="asset/images/bank/asset1.png" alt="">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item article mb-0">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Keselamatan dan Kesehatan Kerja (K3)
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default,
-                                            until the collapse
-                                            plugin adds the appropriate classes that we use to style each element. These
-                                            classes
-                                            control the overall
-                                            appearance, as well as the showing and hiding via CSS transitions. You can
-                                            modify
-                                            any of this with
-                                            custom CSS or overriding our default variables. It's also worth noting that
-                                            just
-                                            about any HTML can go
-                                            within the <code>.accordion-body</code>, though the transition does limit
-                                            overflow.
+                                <div class="ebh-acc-card">
+                                    <div class="ebh-acc-head">Pemilihan Alat yang Tepat serta Perawatan yang Terencana <span><i class="fa fa-plus"></i></span></div>
+                                    <div class="ebh-acc-ct">
+                                        <div class="article">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum ipsum eu tellus commodo semper. Quisque lobortis aliquam dolor sed venenatis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ebh-acc-card">
+                                    <div class="ebh-acc-head">Keselamatan dan Kesehatan Kerja (K3) <span><i class="fa fa-plus"></i></span></div>
+                                    <div class="ebh-acc-ct">
+                                        <div class="article">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum ipsum eu tellus commodo semper. Quisque lobortis aliquam dolor sed venenatis.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <p class="desc-principle">PT. Energi Batu Hitam yakin bahwa dengan menjalankan komitmen ini, perusahaan dapat
                                 memberikan kontribusi positif bagi
                                 masyarakat dan lingkungan, serta membangun masa depan yang lebih berkelanjutan. 
@@ -198,7 +202,7 @@
         <!-- PRINCIPLE END -->
 
         <!-- OPERATIONAL START -->
-        <section class="operational">
+        <section class="operational" id="operasional">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -222,7 +226,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+            </div>
+        </section>
+        <section class="mine-location">
+            <div class="container">
+                <div class="row align-items-center">
                     <div class="col-md-7 col-12 order-2 order-md-1">
                         <img src="asset/images/bank/asset3.png" alt="Logo" class="img-fluid">
                     </div>
@@ -238,7 +246,7 @@
         <!-- OPERATIONAL END -->
 
         <!-- RANTAI PASOK START -->
-        <section class="rantaipasok">
+        <section class="rantaipasok" id="rantaipasok">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -264,7 +272,7 @@
 
         <!-- K3 START -->
         <!-- EBH PEDULI START -->
-        <section class="op-k3">
+        <section class="op-k3" id="k3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -394,24 +402,32 @@
     <!-- FOOTER END-->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-<script src="asset/js/jquery-1.11.0.min.js"></script>
-<script src="asset/js/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $(".ebhcare-slider").owlCarousel({
-            singleItem: true,
-            autoPlay: true,
-            navigation: true
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ebhcare-slider").owlCarousel({
+                singleItem: true,
+                autoPlay: true,
+                navigation: true
+            });
+
+            $(".ebh-acc-head").click(function(){
+                $(".ebh-acc-ct").removeClass("show");
+                $($(this).next()).addClass("show");
+            });
+
+            //SMOOTH SCROLL
+            function scrollToSection(event) {
+                event.preventDefault();
+                var $section = $($(this).attr('href')); 
+                $('html, body').animate({
+                scrollTop: $section.offset().top - 60
+                }, 500);
+            }
+            $('[data-scroll]').on('click', scrollToSection);
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>

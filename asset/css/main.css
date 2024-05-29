@@ -137,6 +137,9 @@ figure img{
     color: #fff;
     border: none;
 }
+.btn-primary:hover{
+    background-color: rgba(0,0,0,0);
+}
 .btn-secondary{
     background: none;
     border: 2px solid #026B33;
@@ -590,8 +593,11 @@ section.hero-caption{
  .ebh-care-card .overlay h3 a:hover{
     text-decoration: none;
  }
- .hero-about .container    {
-    margin-top: 95px;
+ .hero-about{
+    width: 100%;
+    float: left;
+ }
+ .hero-about .container{
     padding-top: 150px;
     width: 100%;
     height:360px;
@@ -670,6 +676,39 @@ section.hero-caption{
     padding-left: 30px;
     list-style: circle;
 }
+.article table{
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+.article table th{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 5px 20px;
+}
+.article table td{
+    padding: 5px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.article h1{
+    font-size: 24px;
+}
+.article h2{
+    font-size: 20px;
+}
+.article h3{
+    font-size: 18px;
+}
+.article h4{
+    font-size: 17px;
+}
+.article h5{
+    font-size: 16px;
+}
+.article h6{
+    font-size: 15px;
+}
+
 .visimisi .section-title ul li{
     padding-left: 100px;
 }
@@ -751,9 +790,6 @@ section.hero-caption{
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-}
-.operational{
-    padding: 0;
 }
 .operational .section-title h3{
     text-align: center;
@@ -1417,6 +1453,186 @@ nav{
     background: url(../images/bank/arrow-right.png) no-repeat center;
 }
 
+.pt-20{
+    padding-top: 20px;
+}
+
+.sub-nav-wrapper .container{
+    background: #f5f5f5;
+    border-top: 1px solid #dedede;
+    border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+}
+.sub-nav{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.sub-nav a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.sub-nav a:hover{
+    color: var(--ebhgreen);
+}
+
+.ebh-acc-card{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: var(--lightgreen);
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+}
+.ebh-acc-head{
+    width: 100%;
+    float: left;
+    background: var(--ebhgreen);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding: 17px 30px;
+    position: relative;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.ebh-acc-head:hover{
+    background: var(--darkgreen);
+    cursor: pointer;
+}
+.ebh-acc-head span{
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: var(--ebhgreen);
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.ebh-acc-ct{
+    width: 100%;
+    float: left;
+    padding: 0 30px;
+    overflow-y: auto;
+    max-height: 0;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.ebh-acc-ct .article{
+    margin-bottom: 0;
+}
+.ebh-acc-ct.show{
+    padding: 20px 30px;
+    max-height: 300px;
+}
+
+.operational::before,
+.rantaipasok::before{
+    content: "";
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    background: var(--lightgreen);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    z-index: -1;
+}
+
+.testimony-slider{
+    width: 100%;
+    float: left;
+}
+.testimony-card{
+    width: 100%;
+    float: left;
+    background: var(--ebhgreen);
+    border-radius: 12px;
+    padding: 40px;
+}
+.testimony-card p{
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 200%;   
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+.testimony-card .profile{
+    width: 100%;
+    float: left;
+}
+.testimony-card .profile h4{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.testimony-card .profile span{
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+}
+.testimony-card .profile .pic{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.testimony-card .profile .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.testimony-card .profile .text{
+    width: calc(100% - 60px);
+    padding-left: 20px;
+    float: left;
+}
+.testimony-slider.owl-carousel .owl-prev,
+.testimony-slider.owl-carousel .owl-next{
+    bottom: 35px;
+    top: auto;
+}
+.testimony-slider.owl-carousel .owl-prev{
+    left: auto;
+    right: 80px;
+}
+.testimony-slider.owl-carousel .owl-next{
+    right: 30px;
+}
+
+
 @media only screen and (max-width: 600px) {
     .hero .container{
         padding-top: 60px;
@@ -1522,6 +1738,7 @@ nav{
         text-align: center;
         margin-bottom: 0;
     }
+
     .op-k3 .row .col-sm-12 h3{
         text-align: center;
         font-size: 24px;
