@@ -34,6 +34,7 @@
 
 .mainsetup{
     overflow-x: hidden;
+    padding-top: 90px;
 }
 
 .master,
@@ -1040,8 +1041,13 @@ section.hero-caption{
     -webkit-transform: translateX(-50%);
 }
 
-nav{
+nav.navbar{
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
 }
 .ebh-menu{
     width: 100%;
@@ -1506,7 +1512,11 @@ nav{
 .pt-20{
     padding-top: 20px;
 }
-
+.sub-nav-wrapper{
+    position: fixed;
+    top: 90px;
+    z-index: 9999;
+}
 .sub-nav-wrapper .container{
     background: #f5f5f5;
     border-top: 1px solid #dedede;

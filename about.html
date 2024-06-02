@@ -70,6 +70,18 @@
             </div>
         </nav>
         <!-- NAVBAR END -->
+        <section class="p-0 sub-nav-wrapper mb-4">
+            <div class="container wide">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sub-nav">
+                            <a data-scroll href="#visimisi">Visi & Misi</a>
+                            <a data-scroll href="#nilai">Nilai Inti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- HERO START -->
         <div class="hero-about">
             <div class="container wide">
@@ -89,7 +101,7 @@
         <!-- HERO END -->
 
         <!-- VISI MISI KAMI START -->
-        <section class="visimisi">
+        <section class="visimisi" id="visimisi">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
@@ -128,7 +140,7 @@
         <!-- VISI MISI END -->
 
         <!-- VALUE CORE START -->
-        <section class="corevalue">
+        <section class="corevalue" id="nilai">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -257,6 +269,20 @@
 
     <script src="asset/js/jquery-1.11.0.min.js"></script>
     <script src="asset/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //SMOOTH SCROLL
+            function scrollToSection(event) {
+                event.preventDefault();
+                var $section = $($(this).attr('href')); 
+                $('html, body').animate({
+                scrollTop: $section.offset().top - 60
+                }, 500);
+            }
+            $('[data-scroll]').on('click', scrollToSection);
+        });
+    </script>
 </body>
 
 </html>
