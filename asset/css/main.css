@@ -177,8 +177,17 @@ section.hero-caption{
 .hero .container    {
     padding-top: 225px;
     height: 598px;
-    background-image: url(../images/bank/banner1.png);
     background-repeat: no-repeat;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
 }
 .hero .row{
     padding-left: 50px;
@@ -213,6 +222,9 @@ section.hero-caption{
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+}
+.hero a:first-child{
+    margin-left: 0;
 }
 .hero a:hover{
     color: #73C348;
@@ -1596,9 +1608,13 @@ nav.navbar{
     transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
     -webkit-transition: all ease-out 0.3s;
+    overflow-x: hidden;
 }
 .ebh-acc-ct .article{
     margin-bottom: 0;
+}
+.ebh-acc-ct .article img{
+    width: 100%;
 }
 .ebh-acc-ct.show{
     padding: 20px 30px;
@@ -1705,7 +1721,21 @@ nav.navbar{
     overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+table.elemtn-detail{
+    width: 100%;
+    float: left;
+}
+table.element-detail td{
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+}
+.contact button{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
     .hero .container{
         padding-top: 60px;
     }
@@ -1757,7 +1787,7 @@ nav.navbar{
         padding-top: 30px;
     }
     .navbar .col-2 button{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .navbar-light .navbar-text{
         margin-left: 15px;
@@ -1791,8 +1821,10 @@ nav.navbar{
         display: block;
     }
     .corevalue .card-value .section-text-card{
-        margin-left: 20px;
-        width: 350px;
+        width: 100%;
+    }
+    .corevalue{
+        padding: 15px;
     }
     .footer-copyright .row .col-md-3 p{
         text-align: left;
@@ -1803,8 +1835,6 @@ nav.navbar{
     }
     .principle .row .article p{
         text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .operational .row .section-title{
         text-align: center;
@@ -1827,8 +1857,6 @@ nav.navbar{
     }
     .k3-desc .article p{
         text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .care-detail .article p{
         text-align: justify;
@@ -1837,8 +1865,8 @@ nav.navbar{
     .galeri-careDetail .row h3{
         text-align: center;
     }
-    .galeri-careDetail .row .col-md-4{
-        padding-left: 40px;
+    .galeri-careDetail{
+        padding: 0 15px;
     }
     .peduli{
         padding-top: 0;
@@ -1846,8 +1874,6 @@ nav.navbar{
     }
     .peduli .row .article p{
         text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .contact{
         padding-top: 10px;
@@ -1864,4 +1890,211 @@ nav.navbar{
         margin-bottom: 50px;
     }
 
+    .navbar-toggler{
+        position: relative;
+        z-index: 9;
+    }
+    .navbar-brand{
+        margin-left: 20px;
+        height: 50px;
+    }
+    .navbar-brand img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    nav.navbar{
+        padding: 10px 15px;
+    }
+    .lang-bt{
+        position: absolute;
+        top: -70px;
+        right: -10px;
+        background: none;
+        width: 60px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .mainsetup{
+        padding-top: 72px;
+    }
+    .hero h1{
+        font-size: 32px;
+    }
+    .hero .sub-hero-text{
+        padding-top: 0;
+    }
+    .btn{
+        padding: 10px 30px 10px 20px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .hero .container{
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .hero a{
+        margin-left: 10px;
+    }
+    .hero-caption .card-1{
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .hero-caption .col-md-6{
+        width: 100%;
+        display: block !important;
+        margin: 0;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .hero-caption .desc-sec .col-md-6 img{
+        margin-bottom: 20px;
+    }
+    .product-home .row .product{
+        padding: 40px;
+    }
+    .product-home .product h2{
+        font-size: 36px;
+    }
+    .product-home .product h3{
+        font-size: 14px;
+    }
+    .product-home .element-detail p{
+        font-size: 14px;
+    }
+    table.element-detail td{
+        font-size: 14px;
+    }
+    .product-home .row .product{
+        height: 550px;
+    }
+    .ebh-care{
+        margin-top: 40px;
+    }
+    .foot-title{
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .sub-nav-wrapper{
+        top: 72px;
+    }
+    .hero-about .container{
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .hero-about h1{
+        font-size: 36px;
+        margin-top: 80px;
+    }
+    .visimisi .ratio{
+        margin-bottom: 40px;
+    }
+    .visimisi::before{
+        display: none;
+    }
+    .col-one-fifth{
+        width: 100%;
+        max-width: 100%;
+    }
+    .corevalue .row .section-text-card h1{
+        width: 60px;
+        float: left;
+        font-size: 72px;
+        line-height: 70%;
+        text-align: center;
+    }
+    .section-text-card .bottom-text{
+        width: calc(100% - 60px);
+        float: left;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        top: auto;
+        padding: 0 0 0 20px;
+    }
+    .section-text-card .bottom-text p{
+        margin-bottom: 0;
+    }
+    .section-text-card{
+        height: auto;
+    }
+    .corevalue .row .col-one-fifth:first-child .section-text-card{
+        border-radius: 12px 12px 0 0;
+        -moz-border-radius: 12px 12px 0 0;
+        -webkit-border-radius: 12px 12px 0 0;
+    }
+    .corevalue .row .col-one-fifth:last-child .section-text-card{
+        border-radius: 0 0 12px 12px;
+        -moz-border-radius: 0 0 12px 12px;
+        -webkit-border-radius: 0 0 12px 12px;
+    }
+    .hero-career .container{
+        margin-top: 0;
+    }
+    .job-vacancy .row:nth-child(2){
+        padding: 0 15px;
+    }
+    .testimoni::before{
+        height: 30%;
+    }
+    .care-detail .article{
+        margin-top: 20px;
+    }
+    .ebhpeduli,
+    .k3-detail{
+        margin-bottom: 40px;
+    }
+    .ebh-acc-head{
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    .section-title h3{
+        font-size: 32px;
+    }
+    .ebh-card-group .col-md-4:first-child .ebh-care-card{
+        border-radius: 12px 12px 0 0;
+        -moz-border-radius: 12px 12px 0 0;
+        -webkit-border-radius: 12px 12px 0 0;
+    }
+    .ebh-card-group .col-md-4:last-child .ebh-care-card{
+        border-radius: 0 0 12px 12px;
+        -moz-border-radius: 0 0 12px 12px;
+        -webkit-border-radius: 0 0 12px 12px;
+    }
+    .pointing-text li::before,
+    .pointing-text li::after{
+        display: none;
+    }
+    .pointing-text.left{
+        padding-right: 0;
+        text-align: left;
+    }
+    .pointing-text.right{
+        padding-left: 0;
+    }
+    .card-produk .text{
+        width: 100%;
+        padding-top: 0;
+    }
+    .card-produk{
+        height: auto;
+    }
+    .card-produk .pic{
+        width: 100%;
+    }
+    .card-produk .pic,
+    .card-produk .pic figure{
+        height: 180px;
+    }
+    .card-produk .text h3{
+        text-align: center;
+    }
+    .card-hero-penjualan figure{
+        height: 200px;
+    }
+    .card-hero-penjualan{
+        padding: 20px;
+        height: auto;
+    }
 }
