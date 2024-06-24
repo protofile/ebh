@@ -147,27 +147,28 @@
                                     <h3>Produk Unggulan</h3>
                                     <h2>GAR 6500</h2>
                                     <h3>Spesifikasi GAR 6500</h3>
-                                    <table class="element-detail">
-                                        <tr>
-                                            <td>Total Moisture</td>
-                                            <td class="text-right">20%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Inherent Moisture</td>
-                                            <td class="text-right">12%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ash Content</td>
-                                            <td class="text-right">5%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total Sulfur</td>
-                                            <td class="text-right">0.3%</td>
-                                        </tr>
-                                    </table>
-                                    
+                                    <div class="element-detail">
+                                        <table class="element-detail">
+                                            <tr>
+                                                <td>Total Moisture</td>
+                                                <td class="text-right">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Inherent Moisture</td>
+                                                <td class="text-right">12%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ash Content</td>
+                                                <td class="text-right">5%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Sulfur</td>
+                                                <td class="text-right">0.3%</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                     <div class="col-md-12 d-flex justify-content-center">
-                                        <a href="#" class="btn btn-primary btn-yellow">Lihat Detail</a>
+                                        <a href="#" class="btn btn-primary yellow">Lihat Detail</a>
                                     </div>
                                 </div>
                                 <div class="col-md-1">
@@ -309,12 +310,47 @@
         </div>
     </div>
     <!-- FOOTER END-->
+
+    <!--POPUP-->
+    <div id="pemberitahuan" class="overlay show" data-timer="5000">
+        <div class="popup">
+            <div class="close-bt"><i class="fa fa-times"></i></div>
+            <div class="article">
+                <div class="text-center">
+                    <img class="popup-logo" src="assets/logo-horrizontal.png" alt="">
+                    <p><strong>PT Energi Batu Hitam berkomitmen untuk menjalankan bisnis dan operasional perusahaan dengan menjunjung tinggi integritas,etika,dan profesionalisme</strong></p>
+                </div>
+                <h3>Informasi Penting</h3>
+                <ul>
+                    <li>Rekrutmen di perusahaan kami tidak dikenakan biaya dan kami tidak meminta transfer uang dalam bentuk apapun.</li>
+                    <li>Kami tidak pernah bekerja sama dengan pihak agen/travel dalam proses rekrutmen.</li>
+                    <li>Seluruh informasi resmi terkait rekrutmen kami dipublikasikan melalui website resmi, akun media sosial resmi, dan platform resmi lainnya.</li>
+                </ul>
+                <h3>Peringatan</h3>
+                <ul>
+                    <li>Hati-hati terhadap penipuan yang mengatasnamakan perusahaan kami</li>
+                    <li>Jangan pernah memberikan data pribadi atau informasi keuangan kepada pihak yang tidak dikenal</li>
+                    <li>Segera laporkan kepada pihak berwajib jika Anda menemukan penipuan yang mengatasnamakan perusahaan kami.</li>
+                    <li>Jangan pernah memberikan uang kepada pihak manapun yang menjanjikan pekerjaan.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--POPUP END-->
+
     </div>
 
     <script src="asset/js/jquery-1.11.0.min.js"></script>
     <script src="asset/js/owl.carousel.min.js"></script>
     <script src="asset/js/main.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                $("#pemberitahuan").removeClass("show");
+            }, $("#pemberitahuan").attr("data-timer"));
+        });
+    </script>
 </body>
 
 </html>
